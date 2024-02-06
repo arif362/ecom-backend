@@ -1,0 +1,38 @@
+<%= render 'layouts/greeting', name: @name, subject: 'Account Deactivation/Deletion request' %>
+
+<% if @request_type == 'activated' %>
+  <p>This is to inform you that we have activated your account as per your request.</p>
+  <p>
+    If you require further assistance, click on the
+    <a href="https://shopoth.com/contact-us"><%='Contact Us'%></a>
+    button or call our Hotline 16764.
+  </p>
+<% else %>
+  <% if @status == 'pending' %>
+    <p><%= "This is to inform you that we have received your account #{@text_pending} request.
+  We are currently reviewing your account and our customer agent will contact you
+  within the next 72 hours to verify your identity and review the terms before
+  accepting the #{@text_pending} request" %></p>
+    <p>
+      If you require further assistance, click on the
+      <a href="https://shopoth.com/contact-us"><%='Contact Us'%></a>
+      button and we'd be happy to assist you.
+    </p>
+  <% elsif @status == 'approved'%>
+    <p>This is to inform you that we have <%=  @text_approved %> your account as per your request.
+      Please keep note that we maintain data privacy and do not save any information after <%=  @text_pending %>.</p>
+    <p>If you want to be Shopoth customer again,
+      <% if  @text_approved == 'deleted' %> please sign up again or <% end %>
+      contact with our Hotline 16764.</p>
+  <% elsif @status == 'rejected'%>
+    <p>This is to inform you that we have rejected your account <%=  @text_pending %> request.</p>
+    <p>
+      If you require further assistance, click on the
+      <a href="https://shopoth.com/contact-us" target=”_blank”><%='Contact Us'%></a>
+      button and we'd be happy to assist you.
+    </p>
+  <% end %>
+<% end %>
+
+
+<%= render 'layouts/ending' %>

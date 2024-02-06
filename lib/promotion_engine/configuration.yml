@@ -1,0 +1,217 @@
+---
+ra_discount:
+  percentage_of_discount:
+    fields:
+      - name: "percent"
+        title: "Percent Value"
+        type: "number"
+        minimum: 1
+      - name: "max_amount"
+        title: "Max Amount"
+        type: "number"
+        minimum: 1
+      - name: "coupons"
+        title: "Number of Coupons"
+        type: "number"
+        minimum: 1
+  absolute_amount_discount:
+    fields:
+      - name: "amount"
+        title: "Amount"
+        type: "number"
+        minimum: 1
+      - name: "coupons"
+        title: "Number of Coupons"
+        type: "number"
+        minimum: 1
+#  buy_x_get_y:
+#    fields:
+#      - name: "x_skus"
+#        title: "SKUs for X"
+#        type: "select"
+#        option: "multiple"
+#        dataset_url: "products/variants/search?sku="
+#      - name: "x_qty"
+#        title: "Quantity for X"
+#        type: "number"
+#        minimum: 1
+#      - name: "y_skus"
+#        title: "SKUs for Y"
+#        type: "select"
+#        option: "multiple"
+#        dataset_url: "products/variants/search?sku="
+#      - name: "y_qty"
+#        title: "Quantity for Y"
+#        type: "number"
+#        minimum: 1
+#      - name: "coupons"
+#        title: "Number of Coupons"
+#        type: "number"
+#        minimum: 1
+sku:
+  percentage_of_discount:
+    fields:
+      - name: "variant_skus"
+        title: "Select SKU(s)"
+        type: "select"
+        option: "multiple"
+        dataset_url: "products/variants/search?sku="
+      - name: "percent"
+        title: "Percent Value"
+        type: "number"
+        minimum: 1
+      - name: "max_amount"
+        title: "Max Amount"
+        type: "number"
+        minimum: 1
+      - name: "max_per_order"
+        title: "Maximum Per Order"
+        type: "number"
+        minimum: 1
+  absolute_amount_discount:
+    fields:
+      - name: "variant_skus"
+        title: "Select SKU(s)"
+        type: "select"
+        option: "multiple"
+        dataset_url: "products/variants/search?sku="
+      - name: "amount"
+        title: "Amount"
+        type: "number"
+        minimum: 1
+      - name: "max_per_order"
+        title: "Maximum Per Order"
+        type: "number"
+        minimum: 1
+  buy_x_get_y:
+    fields:
+      - name: "x_skus"
+        title: "SKUs for X"
+        type: "select"
+        option: "single"
+        dataset_url: "products/variants/search?sku="
+      - name: "x_qty"
+        title: "Quantity for X"
+        type: "number"
+        minimum: 1
+      - name: "y_skus"
+        title: "SKUs for Y"
+        type: "select"
+        option: "single"
+        dataset_url: "products/variants/search?sku="
+      - name: "y_qty"
+        title: "Quantity for Y"
+        type: "number"
+        minimum: 1
+customer_coupon:
+  percentage_of_discount:
+    fields:
+      - name: "percent"
+        title: "Percent Value"
+        type: "number"
+        minimum: 1
+      - name: "max_amount"
+        title: "Max Amount"
+        type: "number"
+        minimum: 1
+      - name: "coupons"
+        title: "Number of Coupons"
+        type: "number"
+        minimum: 1
+  absolute_amount_discount:
+    fields:
+      - name: "amount"
+        title: "Amount"
+        type: "number"
+        minimum: 1
+      - name: "coupons"
+        title: "Number of Coupons"
+        type: "number"
+        minimum: 1
+minimum_cart_value:
+  percentage_of_discount:
+    fields:
+      - name: "min_cart_value"
+        title: "Minimum Cart Amount"
+        type: "number"
+        minimum: 1
+      - name: "percent"
+        title: "Percent Value"
+        type: "number"
+        minimum: 1
+      - name: "max_amount"
+        title: "Max Amount"
+        type: "number"
+        minimum: 1
+      - name: "coupons"
+        title: "Number of Coupons"
+        type: "number"
+        minimum: 1
+  absolute_amount_discount:
+    fields:
+      - name: "min_cart_value"
+        title: "Minimum Cart Amount"
+        type: "number"
+        minimum: 1
+      - name: "amount"
+        title: "Amount"
+        type: "number"
+        minimum: 1
+      - name: "coupons"
+        title: "Number of Coupons"
+        type: "number"
+        minimum: 1
+brand:
+  percentage_of_discount:
+    fields:
+      - name: "brand_names"
+        title: "Brand Names"
+        type: "select"
+        option: "multiple"
+        dataset_url: "brands/search?promo=1&name="
+      - name: "percent"
+        title: "Percent Value"
+        type: "number"
+        minimum: 1
+      - name: "max_amount"
+        title: "Max Amount"
+        type: "number"
+        minimum: 1
+      - name: "min_order_value"
+        title: "Minimum Order Value"
+        type: "number"
+        minimum: 1
+  absolute_amount_discount:
+    fields:
+      - name: "brand_names"
+        title: "Brand Names"
+        type: "select"
+        option: "multiple"
+        dataset_url: "brands/search?promo=1&name="
+      - name: "min_order_value"
+        title: "Minimum Order Value"
+        type: "number"
+        minimum: 1
+      - name: "amount"
+        title: "Amount"
+        type: "number"
+        minimum: 1
+  shipping_charge:
+    fields:
+      - name: "brand_names"
+        title: "Brand Names"
+        type: "select"
+        option: "multiple"
+        dataset_url: "brands/search?promo=1&name="
+      - name: "home_delivery_charge"
+        title: "Home Delivery Charge"
+        type: "number"
+        minimum: 0
+      - name: "pick_up_point_charge"
+        title: "Pick Up Point Charge"
+        type: "number"
+        minimum: 0
+      - name: "express_delivery_charge"
+        title: "Express Delivery Charge"
+        type: "number"
+        minimum: 0

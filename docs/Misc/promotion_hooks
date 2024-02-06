@@ -1,0 +1,12 @@
+Promotion Load (0.6ms)  SELECT "promotions".* FROM "promotions" ORDER BY id DESC LIMIT $1  [["LIMIT", 1]]
+(0.5ms)  BEGIN
+PromotionVariant Load (0.6ms)  SELECT "promotion_variants".* FROM "promotion_variants" WHERE "promotion_variants"."promotion_id" = $1  [["promotion_id", 70]]
+PromotionRule Load (0.7ms)  SELECT "promotion_rules".* FROM "promotion_rules" WHERE "promotion_rules"."promotion_id" = $1  [["promotion_id", 70]]
+PromotionRule Destroy (0.5ms)  DELETE FROM "promotion_rules" WHERE "promotion_rules"."id" = $1  [["id", 166]]
+PromotionRule Destroy (0.4ms)  DELETE FROM "promotion_rules" WHERE "promotion_rules"."id" = $1  [["id", 167]]
+ShopothLineItem Update All (2.3ms)  UPDATE "shopoth_line_items" SET "promotion_id" = $1 WHERE "shopoth_line_items"."id" IN (SELECT "shopoth_line_items"."id" FROM "shopoth_line_items" WHERE "shopoth_line_items"."promotion_id" = $2 ORDER BY shopoth_line_items.created_at DESC)  [["promotion_id", nil], ["promotion_id", 70]]
+Cart Update All (0.7ms)  UPDATE "carts" SET "promotion_id" = $1 WHERE "carts"."promotion_id" = $2  [["promotion_id", nil], ["promotion_id", 70]]
+CustomerOrder Update All (1.4ms)  UPDATE "customer_orders" SET "promotion_id" = $1 WHERE "customer_orders"."promotion_id" = $2  [["promotion_id", nil], ["promotion_id", 70]]
+Coupon Load (0.7ms)  SELECT "coupons".* FROM "coupons" WHERE "coupons"."promotion_id" = $1 ORDER BY id DESC  [["promotion_id", 70]]
+Promotion Destroy (0.5ms)  DELETE FROM "promotions" WHERE "promotions"."id" = $1  [["id", 70]]
+(0.6ms)  COMMIT

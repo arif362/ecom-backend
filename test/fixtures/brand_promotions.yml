@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  promotion_id: 1
+  brand_id: 1
+  state: MyString
+
+two:
+  promotion_id: 1
+  brand_id: 1
+  state: MyString

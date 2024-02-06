@@ -1,0 +1,18 @@
+en:
+  product:
+    sku_type:
+      simple_product: 'Simple Product'
+      variable_product: 'Variable Product'
+
+    dangerous_goods:
+      no_type: 'None'
+      battery: 'Battery'
+      liquid: 'Liquid'
+      flammable: 'Flammable'
+
+    warranty_type:
+      no_warranty: 'No Warranty'
+      international_manufacturer_warranty: 'International Manufacturer Warranty'
+      non_local_warranty: 'Non-local warranty'
+      local_seller_warranty: 'Local seller warranty'
+      international_seller_warranty: 'International Seller Warranty'

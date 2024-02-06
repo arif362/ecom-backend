@@ -1,0 +1,19 @@
+# config/chewy.yml
+# separate environment configs
+production:
+  host: 'localhost:9250'
+  prefix: 'production'
+pre_prod:
+  host: 'localhost:9200'
+  prefix: 'pre_prod'
+pre_prod_v2:
+  host: 'localhost:9250'
+  prefix: 'pre_prod_v2'
+staging:
+  host: 'localhost:9200'
+  prefix: 'staging'
+staging_v2:
+  host: 'localhost:9250'
+  prefix: 'staging_v2'
+development:
+  host: 'localhost:9200'

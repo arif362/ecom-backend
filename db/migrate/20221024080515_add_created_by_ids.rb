@@ -1,0 +1,43 @@
+class AddCreatedByIds < ActiveRecord::Migration[6.0]
+  def change
+    add_column :customer_orders, :created_by_id, :integer
+    add_column :locations, :created_by_id, :integer
+    add_column :riders, :created_by_id, :integer
+    add_column :partners, :created_by_id, :integer
+    add_column :retailer_assistants, :created_by_id, :integer
+    add_column :articles, :created_by_id, :integer
+    add_column :attribute_sets, :created_by_id, :integer
+    add_column :attribute_set_product_attributes, :created_by_id, :integer
+    add_column :bank_accounts, :created_by_id, :integer
+    add_column :bank_transactions, :created_by_id, :integer
+    add_column :blocked_items, :created_by_id, :integer
+    add_column :boxes, :created_by_id, :integer
+    add_column :campaigns, :created_by_id, :integer
+    add_column :distributors, :created_by_id, :integer
+    add_column :distributor_margins, :created_by_id, :integer
+    add_column :districts, :created_by_id, :integer
+    add_column :failed_qcs, :created_by_id, :integer
+    add_column :help_topics, :created_by_id, :integer
+    add_column :meta_data, :created_by_id, :integer
+    add_column :partner_margins, :created_by_id, :integer
+    add_column :product_attributes, :created_by_id, :integer
+    add_column :product_categories, :created_by_id, :integer
+    add_column :product_features, :created_by_id, :integer
+    add_column :product_types, :created_by_id, :integer
+    add_column :products_product_types, :created_by_id, :integer
+    add_column :promo_banners, :created_by_id, :integer
+    add_column :promo_coupons, :created_by_id, :integer
+    add_column :promotion_variants, :created_by_id, :integer
+    add_column :purchase_order_statuses, :created_by_id, :integer
+    add_column :return_customer_orders, :created_by_id, :integer
+    add_column :return_status_changes, :created_by_id, :integer
+    add_column :routes, :created_by_id, :integer
+    add_column :route_devices, :created_by_id, :integer
+    add_column :slides, :created_by_id, :integer
+    add_column :social_links, :created_by_id, :integer
+    add_column :user_modification_requests, :created_by_id, :integer
+    add_column :user_modify_reasons, :created_by_id, :integer
+    add_column :warehouse_bundles, :created_by_id, :integer
+    add_column :warehouse_variants, :created_by_id, :integer
+  end
+end

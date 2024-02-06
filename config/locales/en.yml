@@ -1,0 +1,471 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  number:
+    '0': "0"
+    '1': "1"
+    '2': "2"
+    '3': "3"
+    '4': "4"
+    '5': "5"
+    '6': "6"
+    '7': "7"
+    '8': "8"
+    '9': "9"
+
+  layouts:
+    mailer:
+      payment:
+        subject: The following payment has been created on Shopoth
+        subject_html: The following payment has been created on <strong>Shopoth</strong>
+        subject_failed: The following payment has been failed on Shopoth
+        subject_failed_html: The following payment has been failed on <strong>Shopoth</strong>
+        details: Order Description
+      thank_you_html: Thank you for your <strong>%{subject}</strong>
+      thank_you: Thank you for your %{subject}
+      ending: Sincerely yours,
+      ending_signature: Shopoth
+      greeting: Dear %{name},
+      greeting_html: Dear <strong>%{name}</strong>,
+      footer:
+        line_1_html: This email has been sent to you by <strong>Shopoth</strong> (or its subsidiary).
+        line_2_html: "<strong><i>47 Rd No 23, Dhaka 1212</i></strong>"
+        line_3_html: "<strong><i>Brought to you by Shopoth</i></strong>"
+      tagline: Shopoth Tagline i.e We believe in Quality.
+  activerecord:
+    errors:
+      messages:
+        content_type: is not a valid file format
+  Sr:
+    success:
+      messages:
+        add_bkash_number_successfully: 'bkash number added successfully'
+    errors:
+      messages:
+        bkash_already_taken: 'bkash number has already been taken'
+        add_bkash_number_error: 'Unable to add bKash number'
+        sr_not_found: 'SR not found'
+  Partner:
+    errors:
+      messages:
+        created: '%{resource_name} created successfully.'
+        no_content: 'No content found.'
+        bad_request: 'Your request is not valid.'
+        unauthorized: '%{resource_name} is not authorized.'
+        not_found: '%{resource_name} not found.'
+        login: 'Invalid phone or password.'
+        settings: 'Partner not present.'
+        wrong_pin: 'Invalid pin given.'
+        deliver_to_customer: 'You are not allowed to delivered this order.'
+        deliver_to_customer_failed: 'Unable to deliver order to customer.'
+        wrong_order_invoice_scan: 'You are scanning wrong order.'
+        otp_varification_failed: 'Unable to verify otp.'
+        order_not_found: 'Unable to find customer order under this partner.'
+        failed_to_fetched: 'Unable to fetch %{resource_name}.'
+        notification_fetch_failed: 'Unable to fetch notifications.'
+        payment_list_fetch_failed: 'Unable to fetch Payments.'
+        return_request_not_found: 'Unable to fetch return order.'
+        parcel_list: 'Unable to find parcel list.'
+        sr_phone: 'Unable to get SR phone.'
+        sr_phone_not_set: 'SR phone number not set.'
+        order_received_history: 'Unable to fetch order received history.'
+        order_delivered_history: 'Unable to fetch order delivered history.'
+        order_payment_history: 'Unable to fetch payment history.'
+        order_details: 'Unable to fetch customer order details.'
+        order_place_failed: 'Failed to create customer order.'
+        delivery_failed: 'Customer order not found.'
+        collect_order_failed: "Can't receive order."
+        receive_mergin_failed: 'Unable to receive partner margin.'
+        full_parcel_wrong_invoice: 'Wrong order invoice scanned.'
+        full_parcel_invalid_order: 'You are scanning invalid order.'
+        full_parcel_exists: 'Return Order already exists.'
+        partial_parcel_invalid_order: 'You are scanning invalid product.'
+        partial_parcel_wrong_invoice: 'You are not authorized to return this order.'
+        partial_parcel_after_seven_days: 'After 7 days, the product cannot be returned.'
+        partial_parcel_wrong_qr_code: 'Wrong request of qr codes or already in partner.'
+        partial_parcel_wrong_order: 'Wrong request of qr codes or already in partner.'
+        return_order_already_exists: 'Return Request already exist.'
+        already_returned_line_item: 'Return request for this line item already exists.'
+        promotional_product_return: 'Promotional product can not be returned.'
+        mismatched_scanned_code: 'CustomerOrder not matched with scanned code.'
+        return_details_fetch_failed: 'Unable to show return_order details.'
+        return_history_fetch_failed: 'Unable to fetch return history.'
+        product_fetch_failed: 'No product found'
+        customer_verify_failed: 'Unable to verify customer.'
+        zero_quantity_for_order_place: '0 quantity is unacceptable for placing order.'
+        unavailable_quantity_for_order_place: 'Requested quantity is not available for placing order.'
+        otp_mismatch: 'OTP does not match!'
+        category_fetch_failed: 'Unable to fetch categories.'
+        product_details_fetch_failed: 'Unable to fetch product details.'
+        category_products_fetch_failed: 'Unable to fetch category products.'
+        product_quantity_not_available: 'Required product quantity not available.'
+        cart_creation_failed: 'Cannot create cart.'
+        line_items_count_failed: 'Unable to count line items.'
+        cart_not_found: 'Partner has no cart.'
+        cart_details_fetch_failed: 'Unable to show cart details.'
+        quantity_addition_failed: 'Unable to increase quantity.'
+        quantity_decrease_failed: 'Unable to decrease quantity.'
+        line_item_delete_failed: 'Unable to remove product.'
+        cart_deletion_failed: 'Unable to delete cart.'
+        customer_find_failed: 'Unable to find customer.'
+        otp_verification_failed: 'Unable to verify otp.'
+        less_cart_value: 'Cart value must be greater or equal to 180tk.'
+        phone_number_same: 'User, partner or retailer assistant phone cannot be same.'
+        statement_fetch_failed: 'Unable to fetch statement.'
+        return_order_not_found: 'Wrong return order under this partner.'
+        margin_received_failed: 'Unable to receive profit margin.'
+        return_item_not_found: "Item not found with this qr code"
+        invalid_coupon: "This coupon is already used or invalid!"
+        expired_coupon: "Promotion date is expired or cart total amount is not enough"
+        profit_sr_collect_error: 'SR has not received payment for this month'
+        payment_exist_error: 'Payment already exists.'
+        margin_amount_negative: 'Total amount is not positive'
+        ranking_date_options_fetch_failed: 'Unable to fetch date options.'
+        ranking_list_fetch_failed: 'Unable to fetch partner list.'
+        wrong_otp_error: 'Wrong otp provided.'
+        customer_not_found: 'Customer not found.'
+        bkash_already_taken: 'bkash number has already been taken'
+        add_bkash_number_error: 'Unable to add bKash number'
+        partner_not_found: 'Partner not found'
+
+    success:
+      messages:
+        partner_paid: 'Send money to SR successful.'
+        delivery_successful: 'Successfully delivered.'
+        collect_order_success: 'Order received successfully.'
+        receive_mergin_successful: 'Profit collected successfully.'
+        change_password_successful: 'Password changed.'
+        successfully_fetched: 'Successfully fetched data.'
+        full_parcel: 'Order return request initiated successfully.'
+        partial_parcel: 'Order return request initiated successfully.'
+        partial_parcel_receive: 'Successfully received.'
+        existing_customer_otp_sent: 'Customer exists and OTP sent.'
+        new_customer_otp_sent: 'New customer created and otp sent.'
+        password_changed: 'Successfully changed password.'
+        deletion_successful: 'Successfully deleted.'
+        otp_verified: 'OTP verified.'
+        profit_collected_successfully: 'Profit collected successfully.'
+        ranking_date_options_fetched_successfully: 'Successfully fetched date options'
+        ranking_list_fetched_successfully: 'Successfully fetched partner list'
+        add_bkash_number_successfully: 'bkash number added successfully'
+
+    ranking:
+      mega: 'Mega'
+      week1: 'Week - 01 (17 October - 23 October)'
+      week2: 'Week - 02 (24 October - 30 October)'
+      week3: 'Week - 03 (31 October - 06 November)'
+      week4: 'Week - 04 (07 November - 14 November)'
+      yes-word: 'Yes'
+      no-word: 'No'
+
+  app_notification:
+    messages:
+      order_placed_notification:
+        title: 'Order Placed.'
+        messages: "Order no %{order_id} is confirmed for %{first_name} %{last_name}, phone: %{phone}"
+      order_delivery_notification:
+        title: 'Order Delivery.'
+        messages: "Order no.%{order_id} of %{first_name} %{last_name}, phone no: %{phone} will be delivered to your outlet for pick and pay delivery"
+      customer_payment_notification:
+        title: 'Payment from Customer.'
+        messages: "Received {total_price} taka in cash from {first_name} {last_name}, phone: {phone}."
+      order_delivered_to_customer:
+        title: 'Order Delivered.'
+        messages: "Order no %{order_id} successfully delivered to %{first_name} %{last_name}."
+      return_order_created:
+        title: 'Return Request Created.'
+        messages: "Return request(ID: %{return_id}) successfully created for Order no %{order_id}."
+      order_purchase_by_partner:
+        title: 'Order Purchase.'
+        messages: "Order Id: #{order_id} purchase successful."
+      order_sold_partner:
+        title: 'Order Sold.'
+        messages: "Order Id: #{order_id} sold successful."
+      money_transaction_notification:
+        title: 'Money Received.'
+        messages: "Received %{amount} taka in %{form} from partner %{partner_name} for order no %{order_id}."
+      wallet_transaction_notification:
+        title: 'Money Received.'
+        messages: "Received %{amount} taka in wallet for order no %{order_id}."
+      payment_exceeded:
+        title: 'Payment Extended.'
+        messages: "Time has extended for Order Id: %{order_id}."
+      new_partner_note:
+        title: 'Partner Switched.'
+        messages: "Order no. %{order_backend_id} will be delivered to your outlet."
+      previous_partner_note:
+        title: 'Shipping Changed.'
+        messages: "Order no. %{order_backend_id} has been changed it's shipping from your outlet."
+      sr_note:
+        title: 'Shipping Changed.'
+        messages: "Order no. %{order_backend_id} has been changed it's shipping."
+      rider_note:
+        title: 'Shipping Changed.'
+        messages: "Order no. %{order_backend_id} has been changed it's shipping."
+
+  Warehouse:
+    errors:
+      messages:
+        warehouse_details_fetch_failed: 'Unable to show warehouse details.'
+
+  Ecom:
+    errors:
+      messages:
+        min_6_character_password_check: 'Password must consist of 6 or more characters.'
+        invalid_phone: 'Please provide a valid Bangladeshi phone number.'
+        invalid_phone_or_email: 'Please provide valid email or phone number.'
+        existing_email: 'Email already exists.'
+        otp_send_failed: 'OTP sent failed. Please try again!'
+        registration_failed: 'User registration failed.'
+        password_mismatch: 'Password not matched.'
+        otp_varification_not_done: 'OTP verification not done yet.'
+        login_failed: 'Login failed.'
+        already_subscribed: 'You are already subscribed.'
+        subscription_failed: 'Unable to subscribed.'
+        cart_not_found: 'Unable to find cart.'
+        cart_details_fetch_failed: 'Unable to fetch details of cart.'
+        cart_creation_failed: 'Unable to create cart.'
+        unavailable_quantity: "Can't add due to unavailable quantity."
+        cart_update_failed: 'Unable to update cart.'
+        line_item_update_failed: 'Unable to update line item.'
+        line_item_remove_failed: 'Unable to remove Shopoth line Item.'
+        quantity_increase_failed: 'Unable to increase quantity.'
+        at_least_one_quantity_failed: 'Must keep one product.'
+        quantity_decrease_failed: 'Unable to decrease quantity.'
+        cart_delete_failed: 'Unable to delete cart.'
+        min_cart_error: 'Cart value must be greater or equal to 180tk'
+        coupon_remove_error: 'This coupon is not applied on the cart.'
+        coupon_exp_min_cart_error: 'This coupon code is expired or cart total amount is not enough.'
+        coupon_apply_error: 'Unable to apply coupon.'
+        coupon_use_error: 'This coupon is already used or invalid!'
+        unable_to_process_request: 'Unable to process request due to '
+        store_not_favorited: 'Store is not in favorite list'
+        store_favorite_limit_exceed: "You can't make favorite more than 4 stores."
+        rating_range_not_satisfied: 'Please give a rating between 0 to 5.'
+        partner_id_invalid: 'Please give a valid partner id.'
+        user_information_fetch_failed: 'Unable to fetch user information.'
+        customer_order_record_not_found: "Customer order's record not found."
+        customer_order_not_completed: "Customer order not completed."
+        customer_order_review_present: "Customer order review present."
+        customer_order_creation_failed: 'Unable to create customer order.'
+        valid_quantity: 'Please provide valid quantity.'
+        minimum_cart_value: 'Cart value must be greater or equal to %{min_cart_value}tk.'
+        user_and_partner_phone_same: 'User and Partner phone number can not be same.'
+        wrong_image_type: 'Wrong image type provided.'
+        slider_fetch_failed: 'Unable to fetch sliders.'
+        store_details_fetch_failed: 'Unable to fetch store details.'
+        store_not_found: 'Store not found.'
+        product_not_found: 'Product not found.'
+        product_fetch_failed: 'Unable to fetch product details.'
+        user_address_save_failed: 'Unable to save address.'
+        address_not_found: 'Unable to find address.'
+        user_address_update_failed: 'Unable to update user addresses.'
+        user_address_fetch_failed: 'Unable to fetch user addresses.'
+        user_address_delete_failed: 'Unable to delete user addresses.'
+        user_reviews_fetch_failed: 'Unable to fetch user reviews.'
+        product_reviews_fetch_failed: 'Unable to fetch product reviews.'
+        variant_not_found: 'Unable to find this product.'
+        variant_is_already_in_wishlist: 'This product is already in your wishlist.'
+        variant_add_to_wishlist_failed: 'Unable to add this product to your wishlist.'
+        user_wishlists_fetch_failed: "Unable to fetch your wishlist's products."
+        wishlists_not_found: 'Wishlist not found for this product.'
+        wishlists_delete_failed: 'Unable to delete wishlist.'
+        order_fetch_failed: 'Order fetch failed'
+        user_information_update_failed: 'Unable to update user informations.'
+        passwords_mismatched: "Password and password_confirmation aren't same."
+        passwords_must_exist: 'Password and password_confirmation both should be given.'
+        phone_number_not_valid: 'Phone number is not correct.'
+        phone_number_already_exists: 'The phone number already exists.'
+        otp_sent_failed: 'OTP sent failed. Please try again!'
+        phone_or_otp_mismatched: 'OTP or Phone number mismatched.'
+        phone_change_failed: 'Unable to change user phone number, please try again.'
+        user_current_password_not_matched: "Your current password not matched."
+        user_password_and_current_password_same: "User current password and changed password can't be same."
+        user_password_update_failed: 'Unable to update user password.'
+        partner_not_found: 'Unable to find store.'
+        store_already_in_favourite_list: 'This store already in your favourite list.'
+        return_customer_order_not_found: 'Unable to find Return Customer Order.'
+        return_order_details_fetch_failed: 'Unable to fetch Return Customer Order details.'
+        brands_fetch_failed: 'Unable to fetch brands.'
+        category_not_found: 'Unable to find category.'
+        warehouse_not_found: 'Unable to find warehouse.'
+        category_products_fetch_failed: 'Unable to fetch category products.'
+        advance_filter_fetch_failed: 'Unable to fetch advance filter list.'
+        user_notifications_fetch_failed: 'Unable to fetch user notifications.'
+        notification_count_failed: 'Unable to count notifications.'
+        district_not_found: 'Unable to find district.'
+        thana_not_found: 'Unable to find thana.'
+        area_not_found: 'Unable to find the area.'
+        address_title_already_exist: 'The title already exists for this user, please give another title.'
+        warehouse_must_exists: 'Warehouse needs to exists.'
+        non_refundable_error: 'This can not be refunded'
+        contact_message_failure: 'Failed to send message'
+        feedback_sent_failed: 'Failed to send feedback'
+        product_search_failed: 'Unable to fetch searched products.'
+        key_search_failed: 'Unable to fetched related searched keys.'
+        review_not_allowed: 'You are not allowed to give review for this item.'
+        review_restriction: "You can't give a review before the order's payment."
+        review_already_present: 'Review for this product is already present.'
+        review_creation_failed: 'Unable to create review.'
+        line_item_details_fetch_failed: "Unable to fetch item's details."
+        item_not_found: 'Item not found.'
+        review_title_already_exists: 'Review title already exists for this user.'
+        sample_item_error: "Sample item can not be updated"
+        product_filter_failed: 'Unable to filter products.'
+        newsLetter_not_found: 'Unable to find newsletter.'
+        already_unsubscribed: 'You are already unsubscribed.'
+        unsubscribed_failed: 'Unable to unsubscribe newsletter.'
+        phone_already_registered: 'Provided Phone Number is already Registered. Please try with another Phone Number.'
+        wrong_otp_error: 'Wrong OTP provided.'
+        otp_verify_failed: 'OTP verification failed'
+        user_exists_error: 'User does not exist'
+        user_otp_verified_error: 'User is already verified'
+        member_auth_error: 'You are not allowed to log in'
+        user_not_found: 'Unable to find user.'
+        image_upload_failed: 'Unable to upload image for user.'
+        partner_fetch_failed: 'Unable to fetch partners.'
+        cart_item_not_found: 'Item may be deleted, please refresh the cart.'
+        brand_already_followed: 'Brand already followed.'
+        brand_follow_failed: 'Unable to follow Brand.'
+        brand_follow_not_found: 'Brand following not found.'
+        brand_unfollow_failed: 'Unable to unfollow Brand.'
+        max_limit_exceed: 'Can not exceed products maximum order limit.'
+        credential_not_matched: 'User name and password are not matched.'
+        product_visibility: 'Product not available.'
+        coupon_not_found: 'Coupon not found.'
+        order_not_found: 'Order not found.'
+        coupon_not_applicable: "Coupon isn't applicable."
+        member_user_coupon_apply: "Member customer won't be able to apply coupon."
+        coupon_already_applied: 'Coupon already applied on this cart.'
+        coupon_not_running: 'The coupon is inactive or not running.'
+        user_not_registered: 'You are not registered.'
+        emi_not_applicable: "EMI isn't applicable for this order."
+        minimum_price_to_avail_emi: "Order price needs to be greater than or equal to %{minimum_price}."
+        emi_unavailable_shipping: "EMI isn't available for %{shipping} order."
+        notification_fetch_failed: 'Unable to fetch notifications.'
+        too_many_otp_requests: 'Too many OTP sent. Please try again after 1 hour'
+
+    success:
+      messages:
+        registration_successful: 'User registration successful.'
+        signin_successful: 'Successfully logged in.'
+        successfully_subscribed: 'Successfully subscribed.'
+        cart_details_fetch_successful: 'Successfully fetched cart details.'
+        cart_creation_successful: 'Successfully created cart.'
+        cart_update_successful: 'Successfully updated cart.'
+        line_item_update_successful: 'Successfully updated line item.'
+        line_item_remove_successful: 'Successfully deleted item from cart.'
+        one_quantity_addition_successful: 'Added one quantity.'
+        one_quantity_decrease_successful: 'Decreased one quantity.'
+        cart_delete_successful: 'Successfully deleted cart.'
+        coupon_remove_success: 'Successfully coupon removed.'
+        coupon_apply: 'The coupon is applied successfully.'
+        partner_fetch_successful: 'Successfully fetched selected partners.'
+        favorite_partner_fetch_successful: 'Successfully fetched favourite stores list'
+        store_unfavorite_successful: 'Store unfavorited'
+        store_favorite_successful: 'Successfully favorited'
+        store_review_creation_successful: 'Successfully created store review.'
+        user_information_fetch_successful: 'Successfully fetched user information.'
+        customer_order_create_successful: 'Successfully created customer order.'
+        slider_fetch_successful: 'Slider fetched successfully.'
+        store_details_fetch_successful: 'Successfully fetched store details.'
+        product_fetch_successful: 'Product fetched successfully.'
+        user_address_save_successful: 'Successfully saved address.'
+        user_address_update_successful: 'Successfully updated user addresses.'
+        user_address_fetch_successful: 'Successfully fetched user addresses.'
+        user_address_delete_successful: 'Successfully deleted user addresses.'
+        user_reviews_fetch_successful: 'Successfully fetched user reviews.'
+        product_reviews_fetch_successful: 'Successfully fetched product reviews.'
+        variant_add_to_wishlist_successful: 'Successfully added to your wishlist.'
+        user_wishlists_fetch_successful: "Successfully fetched your wishlist's products."
+        user_wishlists_delete_successful: 'Successfully deleted from your wishlist.'
+        order_fetch_successful: 'Order fetch successfully.'
+        user_information_update_successful: 'Successfully updated user information.'
+        otp_sent_successful: 'Successfully sent OTP.'
+        phone_change_successful: 'Successfully changed user phone number.'
+        user_password_update_successful: 'Successfully updated user password.'
+        return_order_details_fetch_successful: 'Successfully fetched return customer order details.'
+        brands_fetch_successful: 'Successfully fetched brands.'
+        category_product_fetch_successful: 'Successfully fetched category products.'
+        advance_filter_fetch_successful: 'Successfully fetched advance filter list.'
+        user_notifications_fetch_successful: 'Successfully fetched user notifications.'
+        notification_count_successful: 'Successfully counted notifications.'
+        return_initiate_success: 'Return is initiated successfully.'
+        contact_message_success: 'Successfully sent'
+        product_search_success: 'Successfully fetched searched products.'
+        key_search_success: 'Successfully fetched related keys.'
+        review_creation_successful: "Successfully created product's review."
+        line_item_details_fetch_successful: "Successfully fetched item's details."
+        unsubscribe_successful: 'Successfully unsubscribed from newsletter.'
+        otp_verified: 'Successfully verified'
+        image_upload_successful: 'Successfully uploaded image for user.'
+        brand_follow_successful: 'Brand followed successfully.'
+        brand_unfollow_successful: 'Brand unfollowed successfully.'
+
+  common:
+      social_account:
+        whatsapp: 'Whatsapp'
+        imo: 'Imo'
+        viber: 'Viber'
+      success:
+        messages:
+          customer_acquire_reports: 'successfully fetch acquisition monthly reports'
+          customer_acquire: 'OTP sent successfully'
+          otp_verify: 'OTP verified successfully'
+          customer_acquire_greetings: 'The customer will receive a 10% voucher and You will receive BDT 20 For registration'
+          customer_acquire_greetings_without_voucher: 'You will receive BDT 20 For registration'
+          customer_acquire_additional_info: 'The customer will receive a 15% voucher and You will receive BDT 30 For registration'
+          updated_as_ambassador: 'Successfully registered as a Shopoth an ambassador'
+      errors:
+        messages:
+          customer_acquire_reports: 'Unable to provide customer acquisition monthly reports'
+          customer_acquire: 'Unable to complete customer acquisition as '
+          otp_verify: 'Unable to verify OTP'
+          customer_acquire_greetings: 'Unable to complete the registration process as '
+          customer_acquire_additional_info: 'Unable to update customer info as '
+          updated_as_ambassador: 'Unable to register as '
+          acquisition_not_found: 'No acquisition data found for given user'
+          acquisition_user_not_found: 'Your acquisition id not found'
+          incorrect_otp: 'Your given otp is not correct'
+          otp_not_verified: 'OTP is not verified'
+          otp_already_verified: 'Customer is already verified.'
+          user_already_exist: 'Customer is already exist'
+          greetings_not_allowed: 'You are not allowed to get greetings'
+          registration_already_completed: 'Registration process is already completed'
+          min_1_social_required: 'a minimum  of one social account number is required'
+          access_denied_instead_ambassador: 'User Access Denied, You are not an ambassador. Please register as an ambassador'
+          access_denied_instead_sr: 'User Access Denied, You are not a SR. Please register as a SR'
+          ambassador_exist: 'You are already registered as an ambassador.'
+          user_home_address_length: 'Minimum 15 characters required for Home Address'
+          user_nid_length: 'NID number requires 10 to 17 characters'
+          whatsapp_nid_imo_length: '%{social_account} number requires minimum 10 characters'
+          whatsapp_nid_imo_uniqueness: '%{social_account} number already exist'

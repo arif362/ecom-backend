@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "8afc8960-ae00-4419-94e2-c6fcfb02ac57",
+		"name": "Supplier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/v1/suppliers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"supplier\": {\n        \"company\" : \"Supplier Comapny 2\",\n        \"bn_company\" : \"Bangla name of Supplier Comapny 2\",\n        //    \"status\" : 1,\n            \"address_attributes\" :\n                {\n                    \"address_line\" : \"Address line for supplier 2\",\n                    \"bn_address_line\" : \"Bn Address line for supplier 2\",\n                    \"district_id\" : \"1\",\n                    \"thana_id\": \"1\",\n                    \"area_id\": \"1\"\n                }\n        }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/suppliers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

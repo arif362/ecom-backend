@@ -1,0 +1,2332 @@
+{
+  "info": {
+    "_postman_id": "5475d1c4-0794-4904-b7d0-ab59f0900d8f",
+    "name": "products Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Product types",
+      "item": [
+        {
+          "name": "List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/product_types",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_types"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Show",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/product_types/3",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_types",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"product_type\": {\n\t\t\"title\": \"New Arrival\"\n\t}\n}"
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/product_types",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_types"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"product_type\": {\n  \"title\": \"no type1sdgd\"\n  }\n}"
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/product_types/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_types",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/product_types/3",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_types",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/categories",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Show",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/categories/22",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                "22"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "electronics1",
+                  "type": "text"
+                },
+                {
+                  "key": "bn_title",
+                  "value": "mobile",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Mobile phones are now part of our lives as they are not just utilized for sending texts or making phone calls.",
+                  "type": "text"
+                },
+                {
+                  "key": "bn_description",
+                  "value": "mobile",
+                  "type": "text"
+                },
+                {
+                  "key": "parent_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "home_page_visibility",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "16209844.jpeg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/categories",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "mobile",
+                  "type": "text"
+                },
+                {
+                  "key": "bn_title",
+                  "value": "mobile",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Mobile phones are now part of our lives as they are not just utilized for sending texts or making phone calls.",
+                  "type": "text"
+                },
+                {
+                  "key": "bn_description",
+                  "value": "mobile",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "value": "https://www.daraz.com.bd/products/samsung-galaxy-note-20-ultra-69-1440x3088-pixels-108mp-camera-12gb-ram-exynos-990-4500-mah-battery-i134710726-s1056614065.html?spm=a2a0e.searchlistcategory.list.30.274d585eQMx6Qo&search=1",
+                  "type": "text"
+                },
+                {
+                  "key": "parent_id",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "home_page_visibility",
+                  "value": "true",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/categories/2",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/categories/3",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Product Attributes",
+      "item": [
+        {
+          "name": "List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/product_attributes",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_attributes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Show",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/product_attributes/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_attributes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"product_attribute\": \n    {\n        \"name\": \"display6\",\n        \"product_attribute_values_attributes\": \n        [\n            {\"value\": \"flat\"},\n            {\"value\": \"lcd\"},\n            {\"value\": \"led\"}\n        ]\n    }\n}"
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/product_attributes",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_attributes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"product_attribute\": \n    {\n        \"name\": \"rom\",\n        \"product_attribute_values_attributes\": \n        [\n            {\"id\": \"19\", \"value\": \"8gb\"},\n            {\"id\": \"20\", \"value\": \"2gb\"},\n            {\"id\": \"21\", \"value\": \"1gb\"}\n        ]\n    }\n}"
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/product_attributes/6",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_attributes",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/product_attributes/2",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "product_attributes",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/products",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Show",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/products/48",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "products",
+                "48"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product[sku_type]",
+                  "value": "0",
+                  "type": "text"
+                },
+                {
+                  "key": "product[title]",
+                  "value": "T-shirt",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_title]",
+                  "value": "টি-শার্ট",
+                  "type": "text"
+                },
+                {
+                  "key": "product[short_description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_short_description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_type]",
+                  "value": "0",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_period]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_period_type]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_policy]",
+                  "value": "This is for testing",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_warranty_policy]",
+                  "value": "This is for testing",
+                  "type": "text"
+                },
+                {
+                  "key": "product[dangerous_goods]",
+                  "value": "no_type",
+                  "type": "text"
+                },
+                {
+                  "key": "product[inside_box]",
+                  "value": "T-shirt",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_inside_box]",
+                  "value": "টি-শার্ট",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_weight]",
+                  "value": "0.5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_height]",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_length]",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_width]",
+                  "value": "100",
+                  "type": "text"
+                },
+                {
+                  "key": "product[video_url]",
+                  "value": "https://www.youtube.com/",
+                  "type": "text"
+                },
+                {
+                  "key": "product[meta_keyword][]",
+                  "value": "tag",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_meta_keyword][]",
+                  "value": "bn tag",
+                  "type": "text"
+                },
+                {
+                  "key": "product[uid]",
+                  "value": "21314871118212121",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_uid]",
+                  "value": "82131487111212121",
+                  "type": "text"
+                },
+                {
+                  "key": "product[source]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_source]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[company]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_company]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[brand]",
+                  "value": "Benson",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_brand]",
+                  "value": "Benson",
+                  "type": "text"
+                },
+                {
+                  "key": "product[certification]",
+                  "value": "Benson 20HL M12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_certification]",
+                  "value": "Benson 20HL M12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[license_required]",
+                  "value": "Cigeratte dealing license",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_license_required]",
+                  "value": "Cigeratte dealing license",
+                  "type": "text"
+                },
+                {
+                  "key": "product[company_category]",
+                  "value": "Premium",
+                  "type": "text"
+                },
+                {
+                  "key": "product[po_name]",
+                  "value": "Benson FF 20HL",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_po_name]",
+                  "value": "Benson FF 20HL",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product]",
+                  "value": "Cigeratte",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_product]",
+                  "value": "Cigeratte",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_variant]",
+                  "value": "FMC",
+                  "type": "text"
+                },
+                {
+                  "key": "product[material]",
+                  "value": "Paper and tobacco",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_material]",
+                  "value": "Paper and tobacco",
+                  "type": "text"
+                },
+                {
+                  "key": "product[broad_description]",
+                  "value": "abcd",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_broad_description]",
+                  "value": "abcd",
+                  "type": "text"
+                },
+                {
+                  "key": "product[details]",
+                  "value": "sadksjdksj",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_details]",
+                  "value": "sadksjdksj",
+                  "type": "text"
+                },
+                {
+                  "key": "product[consumption_guidelines]",
+                  "value": "Protein 0 gm",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_consumption_guidelines]",
+                  "value": "Protein 0 gm",
+                  "type": "text"
+                },
+                {
+                  "key": "product[additional_information]",
+                  "value": "Burn and smoke",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_additional_information]",
+                  "value": "Burn and smoke",
+                  "type": "text"
+                },
+                {
+                  "key": "product[temperature_requirement]",
+                  "value": "4- 30 *C",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_temperature_requirement]",
+                  "value": "4- 30 *C",
+                  "type": "text"
+                },
+                {
+                  "key": "product[fragility]",
+                  "value": "Fragile",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_fragility]",
+                  "value": "Fragile",
+                  "type": "text"
+                },
+                {
+                  "key": "product[segment]",
+                  "value": "Margin Driver",
+                  "type": "text"
+                },
+                {
+                  "key": "product[specific_product_lead_time]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[avaialability]",
+                  "value": "egular Product",
+                  "type": "text"
+                },
+                {
+                  "key": "product[keywords]",
+                  "value": "dsanf, aldnhf , adf a",
+                  "type": "text"
+                },
+                {
+                  "key": "product[brand_message]",
+                  "value": "Enjoy",
+                  "type": "text"
+                },
+                {
+                  "key": "product[tagline]",
+                  "value": "Go beyond",
+                  "type": "text"
+                },
+                {
+                  "key": "variant 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][sku]",
+                  "value": "63",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_code]",
+                  "value": "6334",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_weight]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][profit]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][margin]",
+                  "value": "11",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][height]",
+                  "value": "54",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][moq]",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][width]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][depth]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][primary]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_code]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case]",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case]",
+                  "value": "34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case_dimension]",
+                  "value": "34x34x5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case_dimension]",
+                  "value": "34x34x34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][case_weight]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_case_weight]",
+                  "value": "32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_dimension]",
+                  "value": "23x32x32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_dimension]",
+                  "value": "23x23x23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_agami_trade]",
+                  "value": "10003",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retail]",
+                  "value": "23333",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][mrp]",
+                  "value": "434",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][consumer_discount]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][vat_tax]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][effective_mrp]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_supplier]",
+                  "value": "12000",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_distribution]",
+                  "value": "12200",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_price_distributor]",
+                  "value": "5656",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retailer]",
+                  "value": "13500",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_consumer]",
+                  "value": "13100",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 3",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": " variant 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][sku]",
+                  "value": "63",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_code]",
+                  "value": "6334",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_weight]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][profit]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][margin]",
+                  "value": "11",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][height]",
+                  "value": "54",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][moq]",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][width]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][depth]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][primary]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_code]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case]",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case]",
+                  "value": "34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case_dimension]",
+                  "value": "34x34x5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case_dimension]",
+                  "value": "34x34x34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][case_weight]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_case_weight]",
+                  "value": "32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_dimension]",
+                  "value": "23x32x32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_dimension]",
+                  "value": "23x23x23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_agami_trade]",
+                  "value": "10003",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retail]",
+                  "value": "23333",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][mrp]",
+                  "value": "434",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][consumer_discount]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][vat_tax]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][effective_mrp]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_supplier]",
+                  "value": "12000",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_distribution]",
+                  "value": "12200",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_price_distributor]",
+                  "value": "5656",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retailer]",
+                  "value": "12500",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_consumer]",
+                  "value": "13000",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 3",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "8",
+                  "type": "text"
+                },
+                {
+                  "key": "faq 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][question]",
+                  "value": "faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_question]",
+                  "value": "bn faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][answer]",
+                  "value": "answer",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_answer]",
+                  "value": "bn answer",
+                  "type": "text"
+                },
+                {
+                  "key": "faq 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][question]",
+                  "value": "faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_question]",
+                  "value": "bn faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][answer]",
+                  "value": "answer",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_answer]",
+                  "value": "bn answer",
+                  "type": "text"
+                },
+                {
+                  "key": "category 1,2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_category_ids][]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_category_ids][]",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "product images 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][product_attribute_value_id]",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][is_default]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "16209844.jpeg"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "pexels-alex-andrews-821651.jpg"
+                },
+                {
+                  "key": "product images 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][product_attribute_value_id]",
+                  "value": "8",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][is_default]",
+                  "value": "1",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "pexels-caio-1279107.jpg"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "pexels-mike-380954.jpg"
+                },
+                {
+                  "key": "product images",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[hero_image_file]",
+                  "type": "file",
+                  "src": "pexels-suzy-hazelwood-2533266.jpg"
+                },
+                {
+                  "key": "product[images_file][]",
+                  "type": "file",
+                  "src": "pexels-olenka-sergienko-3819969.jpg"
+                },
+                {
+                  "key": "product[images_file][]",
+                  "type": "file",
+                  "src": "pexels-suzy-hazelwood-2536965.jpg"
+                },
+                {
+                  "key": "product[product_type_ids][]",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_type_ids][]",
+                  "value": "5",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/products",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product[sku_type]",
+                  "value": "0",
+                  "type": "text"
+                },
+                {
+                  "key": "product[title]",
+                  "value": "T-shirt",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_title]",
+                  "value": "টি-শার্ট",
+                  "type": "text"
+                },
+                {
+                  "key": "product[short_description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_short_description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_description]",
+                  "value": "<p>This is for testing</p>",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_type]",
+                  "value": "0",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_period]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_period_type]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[warranty_policy]",
+                  "value": "This is for testing",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_warranty_policy]",
+                  "value": "This is for testing",
+                  "type": "text"
+                },
+                {
+                  "key": "product[dangerous_goods]",
+                  "value": "no_type",
+                  "type": "text"
+                },
+                {
+                  "key": "product[inside_box]",
+                  "value": "T-shirt",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_inside_box]",
+                  "value": "টি-শার্ট",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_weight]",
+                  "value": "0.5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_height]",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_length]",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "product[package_width]",
+                  "value": "100",
+                  "type": "text"
+                },
+                {
+                  "key": "product[video_url]",
+                  "value": "https://www.youtube.com/",
+                  "type": "text"
+                },
+                {
+                  "key": "product[meta_keyword][]",
+                  "value": "tag",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_meta_keyword][]",
+                  "value": "bn tag",
+                  "type": "text"
+                },
+                {
+                  "key": "product[uid]",
+                  "value": "2131487112121",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_uid]",
+                  "value": "2132778142121",
+                  "type": "text"
+                },
+                {
+                  "key": "product[source]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_source]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[company]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_company]",
+                  "value": "BATB",
+                  "type": "text"
+                },
+                {
+                  "key": "product[brand]",
+                  "value": "Benson",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_brand]",
+                  "value": "Benson",
+                  "type": "text"
+                },
+                {
+                  "key": "product[certification]",
+                  "value": "Benson 20HL M12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_certification]",
+                  "value": "Benson 20HL M12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[license_required]",
+                  "value": "Cigeratte dealing license",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_license_required]",
+                  "value": "Cigeratte dealing license",
+                  "type": "text"
+                },
+                {
+                  "key": "product[company_category]",
+                  "value": "Premium",
+                  "type": "text"
+                },
+                {
+                  "key": "product[po_name]",
+                  "value": "Benson FF 20HL",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_po_name]",
+                  "value": "Benson FF 20HL",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product]",
+                  "value": "Cigeratte",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_product]",
+                  "value": "Cigeratte",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_variant]",
+                  "value": "FMC",
+                  "type": "text"
+                },
+                {
+                  "key": "product[material]",
+                  "value": "Paper and tobacco",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_material]",
+                  "value": "Paper and tobacco",
+                  "type": "text"
+                },
+                {
+                  "key": "product[broad_description]",
+                  "value": "abcd",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_broad_description]",
+                  "value": "abcd",
+                  "type": "text"
+                },
+                {
+                  "key": "product[details]",
+                  "value": "sadksjdksj",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_details]",
+                  "value": "sadksjdksj",
+                  "type": "text"
+                },
+                {
+                  "key": "product[consumption_guidelines]",
+                  "value": "Protein 0 gm",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_consumption_guidelines]",
+                  "value": "Protein 0 gm",
+                  "type": "text"
+                },
+                {
+                  "key": "product[additional_information]",
+                  "value": "Burn and smoke",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_additional_information]",
+                  "value": "Burn and smoke",
+                  "type": "text"
+                },
+                {
+                  "key": "product[temperature_requirement]",
+                  "value": "4- 30 *C",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_temperature_requirement]",
+                  "value": "4- 30 *C",
+                  "type": "text"
+                },
+                {
+                  "key": "product[fragility]",
+                  "value": "Fragile",
+                  "type": "text"
+                },
+                {
+                  "key": "product[bn_fragility]",
+                  "value": "Fragile",
+                  "type": "text"
+                },
+                {
+                  "key": "product[segment]",
+                  "value": "Margin Driver",
+                  "type": "text"
+                },
+                {
+                  "key": "product[specific_product_lead_time]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[avaialability]",
+                  "value": "egular Product",
+                  "type": "text"
+                },
+                {
+                  "key": "product[keywords]",
+                  "value": "dsanf, aldnhf , adf a",
+                  "type": "text"
+                },
+                {
+                  "key": "product[brand_message]",
+                  "value": "Enjoy",
+                  "type": "text"
+                },
+                {
+                  "key": "product[tagline]",
+                  "value": "Go beyond",
+                  "type": "text"
+                },
+                {
+                  "key": "variant 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][id]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku]",
+                  "value": "63",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_code]",
+                  "value": "6334",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_weight]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][profit]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][margin]",
+                  "value": "11",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][height]",
+                  "value": "54",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][moq]",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][width]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][depth]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][primary]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_code]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case]",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case]",
+                  "value": "34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case_dimension]",
+                  "value": "34x34x5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case_dimension]",
+                  "value": "34x34x34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][case_weight]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_case_weight]",
+                  "value": "32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_dimension]",
+                  "value": "23x32x32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_dimension]",
+                  "value": "23x23x23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_agami_trade]",
+                  "value": "10003",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retail]",
+                  "value": "23333",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][mrp]",
+                  "value": "434",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][consumer_discount]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][vat_tax]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][effective_mrp]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_supplier]",
+                  "value": "12000",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_distribution]",
+                  "value": "12200",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_price_distributor]",
+                  "value": "5656",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retailer]",
+                  "value": "13500",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_consumer]",
+                  "value": "13100",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][id]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 3",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": " variant 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][sku]",
+                  "value": "63",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_code]",
+                  "value": "6334",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_weight]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][profit]",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][margin]",
+                  "value": "11",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][height]",
+                  "value": "54",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][moq]",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][width]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][depth]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][primary]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_code]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case]",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case]",
+                  "value": "34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_case_dimension]",
+                  "value": "34x34x5",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_case_dimension]",
+                  "value": "34x34x34",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][case_weight]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_case_weight]",
+                  "value": "32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][sku_dimension]",
+                  "value": "23x32x32",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_dimension]",
+                  "value": "23x23x23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_product_size]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_sku_weight]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_agami_trade]",
+                  "value": "10003",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retail]",
+                  "value": "23333",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][mrp]",
+                  "value": "434",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][consumer_discount]",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][vat_tax]",
+                  "value": "23",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][effective_mrp]",
+                  "value": "43",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_supplier]",
+                  "value": "12000",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_distribution]",
+                  "value": "12200",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][bn_price_distributor]",
+                  "value": "5656",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_retailer]",
+                  "value": "12500",
+                  "type": "text"
+                },
+                {
+                  "key": "product[variants_attributes][][price_consumer]",
+                  "value": "13000",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "variant attribute 3",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[variants_attributes][][product_attribute_values_variants_attributes][][product_attribute_value_id]",
+                  "value": "8",
+                  "type": "text"
+                },
+                {
+                  "key": "faq 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][question]",
+                  "value": "faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_question]",
+                  "value": "bn faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][answer]",
+                  "value": "answer",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_answer]",
+                  "value": "bn answer",
+                  "type": "text"
+                },
+                {
+                  "key": "faq 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][question]",
+                  "value": "faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_question]",
+                  "value": "bn faq 1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][answer]",
+                  "value": "answer",
+                  "type": "text"
+                },
+                {
+                  "key": "product[frequently_asked_questions_attributes][][bn_answer]",
+                  "value": "bn answer",
+                  "type": "text"
+                },
+                {
+                  "key": "category 1,2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_categories_attributes][][category_id]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_categories_attributes][][category_id]",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "product images 1",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][product_attribute_value_id]",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][is_default]",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "product images 2",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][product_attribute_value_id]",
+                  "value": "8",
+                  "type": "text"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][is_default]",
+                  "value": "1",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product images",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "pexels-alex-andrews-821651.jpg"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "pexels-caio-1279107.jpg"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "pexels-eprism-studio-335257.jpg"
+                },
+                {
+                  "key": "product[product_attribute_images_attributes][][images_file][]",
+                  "type": "file",
+                  "src": "pexels-math-90946.jpg"
+                },
+                {
+                  "key": "product[main_image_file]",
+                  "type": "file",
+                  "src": "pexels-suzy-hazelwood-2533266.jpg"
+                },
+                {
+                  "key": "product[images_file][]",
+                  "type": "file",
+                  "src": "pexels-suzy-hazelwood-2536965.jpg"
+                },
+                {
+                  "key": "product[images_file][]",
+                  "type": "file",
+                  "src": "pexels-mike-380954.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/api/v1/products/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "products",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/api/v1/products/2",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "products",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

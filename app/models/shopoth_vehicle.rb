@@ -1,0 +1,2 @@
+class ShopothVehicle < ApplicationRecord
+end

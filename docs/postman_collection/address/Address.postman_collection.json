@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "62935a4d-c53f-427f-837d-69dd7b4b027b",
+		"name": "Address",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/v1/districts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"district\" : {\n        \"name\" : \"Dhaka\",\n        \"bn_name\" : \"Bn Dhaka\"\n        //    \"status\" : 1,\n            //   \"address_attributes\" :\n            //      {\n            //         \"address_line\" : \"address line 1\",\n            //         \"district_id\" : \"1\",\n            //         \"thana_id\": \"2\",\n            //         \"area_id\": \"3\"\n            //      }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/districts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"districts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/thanas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"thana\":{\n        \"district_id\" : 1,\n        \"name\" : \"Ramna\",\n        \"bn_name\" : \"Bn Ramna Thana\"\n        //    \"status\" : 1,\n            //   \"address_attributes\" :\n            //      {\n            //         \"address_line\" : \"address line 1\",\n            //         \"district_id\" : \"1\",\n            //         \"thana_id\": \"2\",\n            //         \"area_id\": \"3\"\n            //      }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/thanas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"thanas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/areas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"area\":{\n        \"thana_id\" : 1,\n        \"name\" : \"Niketon\",\n        \"bn_name\" : \"Bn Niketon Area\"\n        //    \"status\" : 1,\n            //   \"address_attributes\" :\n            //      {\n            //         \"address_line\" : \"address line 1\",\n            //         \"district_id\" : \"1\",\n            //         \"thana_id\": \"2\",\n            //         \"area_id\": \"3\"\n            //      }\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/areas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"areas"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

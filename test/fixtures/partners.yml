@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_name: MyString
+  bn_owner_name: MyString
+  retailer_code: MyString
+  partner_code: MyString
+  region: MyString
+  area: MyString
+  territory: MyString
+  sub-channel: 1
+  tsa_id: 1
+  latitude: 
+  longitude: 
+  route: one
+
+two:
+  owner_name: MyString
+  bn_owner_name: MyString
+  retailer_code: MyString
+  partner_code: MyString
+  region: MyString
+  area: MyString
+  territory: MyString
+  sub-channel: 1
+  tsa_id: 1
+  latitude: 
+  longitude: 
+  route: two

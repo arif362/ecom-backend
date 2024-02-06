@@ -1,0 +1,12 @@
+<% content_for :subject, t('layouts.mailer.payment.subject_failed') %>
+<%= render 'layouts/greeting', name: @name, subject: 'Payment' %>
+
+<%= t('layouts.mailer.payment.details') %>
+
+<% @order.shopoth_line_items.each do |item| %>
+  Name: <%= item.variant.product.title %>
+  Quantity: <%= item.quantity %>
+  Price: <%= item.total_price %>
+<% end %>
+
+<%= render 'layouts/ending' %>

@@ -1,0 +1,13 @@
+en:
+  sub_domain:
+    narshingdi: 'nsd'
+    khulna: 'khl'
+    dhaka: 'dhk'
+    noakhali: 'nkh'
+    jessore: 'jsd'
+  district:
+    nsd: 'narshingdi'
+    khl: 'khulna'
+    dhk: 'dhaka'
+    nkh: 'noakhali'
+    jsd: 'jessore'
